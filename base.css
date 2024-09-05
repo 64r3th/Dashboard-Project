@@ -1,1 +1,60 @@
-/*# sourceMappingURL=base.css.map */
+body {
+  margin: 0;
+}
+body * {
+  display: flex;
+}
+
+.sideMenu {
+  height: 100%;
+}
+
+.sideMenu, .settings {
+  flex-flow: column;
+  background-color: #2de1c2;
+  width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .sideMenu {
+    display: none;
+  }
+  .dropdown {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media screen and (min-width: 600px) {
+  .dropdown {
+    display: none;
+  }
+}
+.dropdownContent {
+  display: none;
+}
+
+.show {
+  display: flex;
+  flex-flow: column;
+}
+
+script {
+  display: none;
+}
+
+.setting {
+  flex-flow: row;
+}
+.setting a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=base.css.map */
