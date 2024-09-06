@@ -7,59 +7,75 @@
     <link rel="stylesheet" href="./base.css" />
 </head>
 <body>
-    <div class="dropdown">
-        <button onclick="dropdown()" class="dropButton" ><img src="#"></button>
-        <div id="sideMenuDropdown" class="dropdownContent">
-            <h1>Settings:</h1>
-            <div class="setting">
-                <a href="#">Theme</a>
+    <div class="allTheThings">
+        <div class="sideMenu">
+            <div class="logo">
+                <img src="#">
+                <h1>Sassy Dash</h1>
             </div>
-            <div class="setting">
-                <a href="#">User</a>
+            <div class="settings">
+                <h1>Settings:</h1>
+                <div class="setting">
+                    <a href="#">Theme</a>
+                </div>
+                <div class="setting">
+                    <a href="#">User</a>
+                </div>
+                <div class="setting">
+                    <a href="#">Misc</a>
+                </div>
             </div>
-            <div class="setting">
-                <a href="#">Misc</a>
+            <div class="settings">
+                <div class="setting">
+                    <a href="#">Change User</a>
+                </div>
+                <div class="setting">
+                    <a href="#" class="logOut">Log Out</a>
+                </div>
             </div>
-            <div class="setting">
-                <a href="#">Change User</a>
+        </div>
+        <div class="content">
+            <div class="contentTop">
+                <div class="dropdown">
+                    <button onclick="dropdown()" class="dropButton" ><img src="#">Menu</button>
+                    <div id="sideMenuDropdown" class="dropdownContent">
+                        <h1>Settings:</h1>
+                        <div class="setting">
+                            <a href="#">Theme</a>
+                        </div>
+                        <div class="setting">
+                            <a href="#">User</a>
+                        </div>
+                        <div class="setting">
+                            <a href="#">Misc</a>
+                        </div>
+                        <div class="setting">
+                            <a href="#">Change User</a>
+                        </div>
+                        <div class="setting">
+                            <a href="#" class="logOut">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <img src="#">
+                    <h4>Search</h4>
+                </div>
+                <div class="user">
+                    <img src="#">
+                    <h4>Dolorus Amet</h4>
+                </div>
             </div>
-            <div class="setting">
-                <a href="#" class="logOut">Log Out</a>
+            <div class="contentBottom">
+                <div class="contentLeft">
+                    <p>Left</p>
+                </div>
+                <div class="contentRight">
+                    <p>Right</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="sideMenu">
-        <div class="logo">
-            <img src="#">
-            <h1>Sassy Dash</h1>
-        </div>
-        <div class="settings">
-            <h1>Settings:</h1>
-            <div class="setting">
-                <a href="#">Theme</a>
-            </div>
-            <div class="setting">
-                <a href="#">User</a>
-            </div>
-            <div class="setting">
-                <a href="#">Misc</a>
-            </div>
-        </div>
-        <div class="Settings">
-            <div class="setting">
-                <a href="#">Change User</a>
-            </div>
-            <div class="setting">
-                <a href="#" class="logOut">Log Out</a>
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <div class="contentTop">
-            
-        </div>
-    </div>
-
     <script>
         function dropdown() {
             document.getElementById("sideMenuDropdown").classList.toggle("show");

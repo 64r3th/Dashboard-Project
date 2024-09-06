@@ -1,18 +1,26 @@
 body {
   margin: 0;
+  height: 100vh;
 }
 body * {
   display: flex;
 }
 
+.allTheThings {
+  display: flex;
+  flex-flow: row;
+}
+
 .sideMenu {
-  height: 100%;
+  height: 100vh;
+  position: fixed;
 }
 
 .sideMenu, .settings {
   flex-flow: column;
   background-color: #2de1c2;
   width: 300px;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 600px) {
@@ -22,11 +30,21 @@ body * {
   .dropdown {
     display: flex;
     flex-flow: column;
+    flex-grow: 1;
+  }
+  .dropdownContent {
+    background-color: white;
+  }
+  .content {
+    margin: 0;
   }
 }
 @media screen and (min-width: 600px) {
   .dropdown {
     display: none;
+  }
+  .content {
+    margin-left: 300px;
   }
 }
 .dropdownContent {
@@ -57,4 +75,54 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+.content {
+  flex-flow: column;
+  width: 100%;
+}
+
+.contentTop {
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: baseline;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+
+.contentBottom {
+  margin-top: 70px;
+}
+
+.contentLeft {
+  flex-grow: 4;
+}
+
+.contentRight {
+  flex-grow: 1;
+}
+
+.search {
+  background-color: #f5f6fb;
+  flex-grow: 4;
+  height: 50px;
+  border-radius: 25px;
+  border: solid 1px black;
+  align-items: center;
+}
+.search h4 {
+  color: #b2b2b2;
+}
+
+.user {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  align-items: center;
 }/*# sourceMappingURL=base.css.map */
