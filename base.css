@@ -124,6 +124,9 @@ button:hover {
 .search h4 {
   color: #b2b2b2;
 }
+.search img {
+  width: 50px;
+}
 
 .user {
   flex-grow: 1;
